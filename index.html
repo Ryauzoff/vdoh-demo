@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Вдох · мастерская красоты в Перми</title>
+<meta name="description" content="Мастерская «Вдох» на Тополевом, 5: ногти, массаж, лазер и спа. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Маникюр и педикюр в центре Перми – цены в прайсе">
+<meta property="og:description" content="Мастерская «Вдох» на Тополевом, 5: ногти, массаж, лазер и спа. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%2334313a%27/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/tenor-sans-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/onest-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face { font-family: "Onest"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/onest-400-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/onest-400-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/fonts/onest-500-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/fonts/onest-500-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/fonts/onest-600-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/fonts/onest-600-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Tenor Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/tenor-sans-400-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Tenor Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/tenor-sans-400-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+:root { --c-canvas: #f3e7e4; --c-surface: #fbf6f4; --c-ink: #2b292e; --c-ink-soft: #645b62; --c-accent: #34313a; --c-accent-ink: #f8f0ee; --c-accent-deep: #8c4b55; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
+<style id="fix-prod">
+/* Патч-слой для каркаса «Продающий» (vibe-sait).
+   Один файл на все сайты: правим здесь, а не в каждом сайте.
+   Лечит повторяющиеся дефекты шаблона:
+   1) первый экран выше окна: заголовок крупный, форма записи уходит под сгиб;
+   2) список услуг и чипы дней/времени нарисованы крупно, из-за чего форма не влезает;
+   3) на коротком окне (1280x641, масштаб Windows 150%) не видно ни конца формы, ни кнопки;
+   4) блоки страницы дышат слишком широко для 100% масштаба;
+   5) на телефоне шаблон прячет фото бизнеса, а заголовок в 1,5 раза съедает первый экран;
+   6) на телефоне первая ступень сжатия не спасает при крупном системном шрифте (до 430px);
+   7) нижняя панель кнопок в шаблоне живёт только до 640px, на крупных телефонах пропадает;
+   8) звёзды рейтинга обрезают пятую звезду, и число отзывов наезжает на неё;
+   9) на узких экранах блоки могли остаться прозрачными из-за анимации появления.
+   Цвета, шрифты и композиция остаются сайта. Телефонные проверки: prod-fix.mjs, размеры
+   390x844, 384x695 и 360x740, плюс проверки фото, нижней панели и звёзд. */
+
+@media (min-width: 861px) {
+  .s-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 560px);
+    gap: clamp(28px, 3.5vw, 48px);
+    padding-block: clamp(24px, 4svh, 52px) 36px;
+  }
+  .s-hero h1 { font-size: calc(clamp(2.15rem, 3.35vw, 3.15rem) * var(--h1k, 1)); }
+  .s-eyebrow { margin-bottom: 12px; font-size: .76rem; }
+  .s-lead { margin-top: 14px; font-size: 1.03rem; line-height: 1.5; max-width: 36em; }
+  .s-ticks { grid-template-columns: 1fr 1fr; gap: 8px 18px; margin-top: 20px; }
+  .s-ticks li { padding-left: 28px; font-size: .93rem; }
+  .s-ticks li::before { width: 19px; height: 19px; }
+  .s-ticks li::after { left: 6px; top: calc(.1em + 4px); width: 5px; height: 9px; }
+  .s-rating { margin-top: 16px; font-size: .88rem; }
+  .s-rating b { font-size: 1rem; }
+  .s-hero__photo { margin-top: 20px; }
+  .s-hero__photo figcaption { font-size: .78rem; }
+
+  /* форма записи: компактные чипы, услуги в две колонки */
+  .s-widget { padding: 20px; gap: 12px; }
+  .s-widget__title { font-size: 1.18rem; }
+  .s-widget legend { font-size: .72rem; margin-bottom: 5px; }
+  .s-chips { gap: 7px; }
+  .s-chip { min-height: 38px; padding: 7px 11px; font-size: .86rem; }
+  [data-s-days] .s-chip { min-height: 34px; padding: 6px 9px; font-size: .8rem; justify-content: center; }
+  [data-s-days] { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .s-chips--col { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+  .s-chips--col .s-chip--row { flex-direction: column; align-items: flex-start; justify-content: center; gap: 1px; min-height: 46px; padding: 6px 10px; }
+  .s-chips--col .s-chip--row > span { font-size: .83rem; line-height: 1.15; }
+  .s-chips--col .s-chip--row b { font-size: .8rem; }
+  .s-chips--col .s-chip--row b small { font-size: .72rem; }
+  .s-bubble { margin-left: 12px; padding: 9px 11px; }
+  .s-bubble__label { font-size: .66rem; margin-bottom: 2px; }
+  .s-bubble p { font-size: .84rem; line-height: 1.4; }
+  .s-send .s-btn { min-height: 46px; font-size: .92rem; }
+}
+
+/* Узкий десктоп: форма уже, две колонки услуг распирают текст. */
+@media (min-width: 861px) and (max-width: 1100px) {
+  .s-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 460px); gap: 28px; }
+  .s-ticks { grid-template-columns: 1fr; }
+}
+
+/* Короткое окно: форма должна целиком влезать в кадр. */
+@media (min-width: 861px) and (max-height: 860px) {
+  .s-hero { padding-block: 24px 28px; }
+  .s-hero h1 { font-size: calc(clamp(2rem, 5.6svh, 3rem) * var(--h1k, 1)); }
+  .s-lead { margin-top: 12px; font-size: .98rem; }
+  .s-ticks { margin-top: 16px; }
+  .s-rating { margin-top: 12px; }
+  .s-widget { padding: 16px; gap: 9px; }
+  .s-widget__title { font-size: 1.1rem; }
+  .s-chip { min-height: 34px; padding: 6px 9px; font-size: .82rem; }
+  .s-chips--col .s-chip--row { min-height: 40px; padding: 5px 9px; }
+  .s-chips--col .s-chip--row > span { font-size: .8rem; }
+  .s-chips--col .s-chip--row b { font-size: .78rem; }
+  .s-send .s-btn { min-height: 44px; }
+}
+
+/* Совсем низкое окно: ещё на ступень меньше заголовок и отступы. */
+@media (min-width: 861px) and (max-height: 700px) {
+  .s-hero { padding-block: 20px 24px; }
+  .s-hero h1 { font-size: calc(clamp(1.9rem, 5.3svh, 2.55rem) * var(--h1k, 1)); }
+  .s-lead { font-size: .94rem; }
+  .s-ticks { gap: 6px 16px; }
+  .s-ticks li { font-size: .88rem; }
+  .s-widget { gap: 8px; }
+  .s-widget__title { font-size: 1.02rem; }
+  .s-widget legend { margin-bottom: 4px; }
+  .s-widget fieldset:first-of-type legend { display: none; }
+  .s-chips--col .s-chip--row { min-height: 38px; }
+}
+
+/* Совсем низкое окно: на 1920x1080 при масштабе 150% и панели браузера остаётся ~555 px,
+   без этой ступени кнопка записи уходит под сгиб. */
+@media (min-width: 861px) and (max-height: 620px) {
+  .s-hero { padding-block: 16px 18px; }
+  .s-widget { padding: 11px; gap: 4px; }
+  .s-widget__title { font-size: .98rem; }
+  .s-widget legend { margin-bottom: 3px; font-size: .68rem; }
+  .s-chips--col .s-chip--row { min-height: 32px; padding: 4px 8px; }
+  .s-chips--col .s-chip--row > span { font-size: .78rem; }
+  .s-chips--col .s-chip--row b { font-size: .74rem; }
+  .s-chip { min-height: 30px; padding: 5px 8px; font-size: .78rem; }
+  [data-s-days] .s-chip { min-height: 30px; padding: 4px 7px; font-size: .76rem; }
+  .s-send .s-btn { min-height: 40px; font-size: .88rem; }
+}
+
+/* Крупный заголовок занимает первый экран: фото под ним оставляем только на высоких окнах. */
+@media (min-width: 861px) and (max-height: 1019px) {
+  .s-hero__photo { display: none; }
+}
+@media (min-width: 861px) and (max-height: 799px) {
+  .s-bubble { display: none; }
+}
+
+/* ---- секции: тот же ритм, но на ступень компактнее ----------------------- */
+.s-reviews__stars { width: 5em; letter-spacing: 0; }
+.s-reviews__stars::after { color: #fc0; }
+
+/* Нижняя панель «Выбрать время / Позвонить»: шаблон показывает её только до 640px,
+   на крупных телефонах и планшетах она пропадала. */
+@media (min-width: 641px) and (max-width: 960px) {
+  body { padding-bottom: 86px; }
+  .s-dock { display: flex; gap: 8px; position: fixed; z-index: 40; left: 0; right: 0; bottom: 0; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: color-mix(in srgb, var(--c-canvas) 92%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 -1px 0 var(--hair); }
+  .s-dock .s-btn { flex: 1; min-height: 48px; font-size: .88rem; padding: 0 .9em; white-space: nowrap; }
+  .s-dock .s-btn:first-child { flex: 1.7; }
+}
+
+.s-section { padding-top: clamp(44px, 5.5vw, 72px); }
+.s-section__head { gap: 8px; margin-bottom: 24px; }
+.s-section__head h2 { font-size: clamp(1.55rem, 2.7vw, 2.15rem); }
+.s-section__head p { font-size: .97rem; }
+.s-photos { padding-top: clamp(44px, 5.5vw, 72px); }
+.s-incl > div { padding: 22px; }
+.s-steps__item { padding: 18px; }
+.s-promises li { padding: 20px; }
+.s-reviews li { padding: 20px; }
+.s-faq summary { padding: 15px 48px 15px 18px; }
+.s-contacts { padding: clamp(20px, 3vw, 32px); }
+.s-foot { margin-top: clamp(44px, 5.5vw, 72px); }
+
+/* ---- телефон ------------------------------------------------------------- */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (max-width: 860px) {
+  .s-hero { padding-block: 18px 24px; gap: 0; }
+  /* фото бизнеса шаблон на телефоне прячет, а в разметке оно внутри текста:
+     разворачиваем текстовый блок, чтобы фото встало под формой записи */
+  .s-hero__text { display: contents; }
+  .s-hero__widget { order: 2; margin-top: 18px; }
+  .s-hero__photo { display: block; order: 3; margin: 18px 0 0; }
+  .s-hero__photo figcaption { font-size: .78rem; }
+  .s-hero h1 { font-size: calc(clamp(1.5rem, 6.4vw, 1.85rem) * var(--h1k, 1)); }
+  .s-eyebrow { margin-bottom: 8px; }
+  .s-lead { margin-top: 10px; font-size: .98rem; line-height: 1.45; }
+  .s-ticks { margin-top: 14px; gap: 8px; }
+  .s-ticks li { padding-left: 28px; font-size: .95rem; }
+  .s-ticks li::before { width: 19px; height: 19px; }
+  .s-ticks li::after { left: 6px; }
+  .s-rating { margin-top: 12px; }
+  .s-widget { padding: 14px; gap: 10px; }
+  .s-widget__title { font-size: 1.08rem; }
+  .s-chips--col { display: flex; flex-direction: column; flex-wrap: nowrap; }
+  .s-chip--row { min-height: 38px; }
+  .s-hero__bg { height: 360px; }
+}
+
+/* Узкий телефон: фото студии портретное, в 16:9 от него остаётся полоска. */
+@media (max-width: 600px) {
+  .s-hero__photo img { aspect-ratio: 3 / 4; }
+}
+
+/* Узкие телефоны с крупным системным шрифтом: ещё на ступень мельче,
+   иначе начало формы уезжает за экран. */
+@media (max-width: 430px) {
+  .s-hero { padding-block: 14px 20px; }
+  .s-eyebrow { font-size: .66rem; margin-bottom: 6px; }
+  .s-hero h1 { font-size: calc(clamp(1.25rem, 5.2vw, 1.55rem) * var(--h1k, 1)); }
+  .s-lead { margin-top: 8px; font-size: .88rem; line-height: 1.4; }
+  .s-ticks { margin-top: 10px; gap: 5px; }
+  .s-ticks li { padding-left: 26px; font-size: .88rem; }
+  .s-ticks li::before { width: 17px; height: 17px; }
+  .s-rating { margin-top: 10px; font-size: .84rem; }
+  .s-widget { padding: 12px; gap: 8px; }
+  body { padding-bottom: 84px; }
+}
+
+/* На телефоне появление блоков при прокрутке иногда не срабатывает (заметили на Chrome 158
+   в оболочке Android): секции оставались прозрачными, и внизу страницы была пустота.
+   На узких экранах показываем всё сразу. */
+@media (max-width: 960px) {
+  .s-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+</style>
+</head>
+<body class="s-prod" id="top" data-wa="+7 999 125-82-70" data-tg="+79991258270" data-max="">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Вдох</a>
+  <div class="s-bar__right">
+    <a class="s-bar__tel" href="tel:+79991258270">+7 999 125-82-70</a>
+    <a class="s-btn s-btn--sm" href="#widget">Выбрать время</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Мастерская красоты · Пермь</p>
+      <h1>Маникюр и педикюр в центре Перми – цены в прайсе</h1>
+      <p class="s-lead">Мастерская «Вдох» на Тополевом, 5: ногти, массаж, лазер и спа. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.</p>
+      <ul class="s-ticks"><li>Рейтинг 5,0 и 80 отзывов</li><li>Маникюр, педикюр, массаж, спа</li><li>Три категории мастеров</li><li>Центр Перми, ежедневно до 20:00</li></ul>
+      <p class="s-rating"><b>5,0</b> в 2ГИС · 80 отзывов</p>
+      <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Зал мастерской «Вдох»: кресла для ногтей, зеркала, кушетка" loading="lazy" decoding="async" style="object-position:50% 55%"><figcaption>Тополевый переулок, 5, первый этаж</figcaption></figure>
+    </div>
+    <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00" data-message="Здравствуйте! Хочу записаться в мастерскую «Вдох»: {услуга}, {день} в {время}." onsubmit="return false">
+      <h2 class="s-widget__title">Запись в мастерскую</h2>
+      <fieldset><legend>Услуга</legend>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Маникюр, топ-мастер" data-price="2600" data-from="" data-min="" checked><span>Маникюр, топ-мастер</span><b>2 600 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Маникюр, базовая" data-price="2200" data-from="" data-min=""><span>Маникюр, базовая</span><b>2 200 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Маникюр, Гульназ" data-price="3300" data-from="" data-min=""><span>Маникюр, Гульназ</span><b>3 300 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Педикюр полный" data-price="2900" data-from="" data-min=""><span>Педикюр полный</span><b>2 900 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Педикюр экспресс" data-price="2600" data-from="" data-min=""><span>Педикюр экспресс</span><b>2 600 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Массаж спины 30 мин" data-price="1400" data-from="" data-min=""><span>Массаж спины 30 мин</span><b>1 400 ₽</b></label></div>
+      </fieldset>
+      <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
+      <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
+      <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Ваше сообщение</span><p data-s-bubble></p></div>
+      <div class="s-send">
+        <a class="s-btn s-btn--wide" data-s-msg="whatsapp" href="#">Записаться в WhatsApp</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
+      </div>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      
+    </form></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Зал мастерской «Вдох»: кресла для ногтей, зеркала, кушетка" decoding="async" style="object-position:50% 55%" fetchpriority="high"></figure>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что входит в маникюр с покрытием</h2></header>
+    <div class="s-incl">
+      <div><h3>Входит</h3><ul><li>Обработка аппаратом и ножницами</li><li>Форма и кутикула</li><li>Укрепление гелем, оно входит в стоимость</li><li>Покрытие гель-лак однотонное</li></ul></div>
+      <div><h3>Можно добавить</h3><ul><li>Френч, дизайн, роспись</li><li>Японский маникюр</li><li>Массаж или спа в тот же визит</li></ul></div>
+    </div>
+  </section>
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Услуги и цены</h2><p>Цены с карточки студии, как у топ-мастера. У мастера базовой категории дешевле, у топ-мастера Гульназ дороже.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      <h3 class="s-board__title">Маникюр</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Маникюр с покрытием гель-лак<em>топ-мастер, укрепление входит в стоимость</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 600 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Эстетический маникюр без покрытия<em>топ-мастер</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 700 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Японский маникюр<em>топ-мастер</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Спа-уход за кожей рук</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">590 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Педикюр</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Полный педикюр с покрытием гель-лак<em>топ-мастер</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 900 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Экспресс педикюр с покрытием<em>топ-мастер</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 600 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Эстетический педикюр без покрытия<em>топ-мастер</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 600 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Массаж, спа и эпиляция</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Классический массаж спины<em>30 минут</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 400 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Массаж лица Кобидо</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 900 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Спа Релакс</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 900 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Лазерная эпиляция, три зоны<em>подмышки, глубокое бикини, голени</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Брови: оформление и окрашивание</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 800 ₽</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Базовая категория: гель-лак 2 200 ₽, полный педикюр 2 500 ₽. Топ-мастер Гульназ: гель-лак 3 300 ₽, полный педикюр 3 600 ₽. Курсы массажа и полный прайс пришлём в мессенджере.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как проходит запись</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Выбираете услугу и время</h3><p>На этой странице: услуга, день и время. Заявка уйдёт в мессенджер студии.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Студия подтверждает запись</h3><p>Работают ежедневно с 10:00 до 20:00, по предварительной записи.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Приходите на Тополевый, 5</h3><p>Первый этаж, четыре минуты от ЦУМа, рядом бесплатная парковка на 70 мест.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">04</span><h3>Мастер делает ногти</h3><p>Форма, кутикула, укрепление и покрытие. Цвет выбираете на месте.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">05</span><h3>Чай или кофе после</h3><p>В студии наливают чай и кофе с конфетами, можно никуда не спешить.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/work1.webp" alt="Красный гель-лак с золотым акцентом на одном ногте" loading="lazy" decoding="async"><figcaption>Гель-лак, топ-мастер</figcaption></figure><figure><img class="" src="assets/work2.webp" alt="Серо-голубой глянцевый гель-лак, форма квадрат" loading="lazy" decoding="async"><figcaption>Гель-лак с укреплением</figcaption></figure><figure><img class="" src="assets/massage.webp" alt="Массаж в две пары рук в кабинете студии" loading="lazy" decoding="async"><figcaption>Массаж и спа в тот же визит</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что обещаем</h2></header>
+    <ul class="s-promises">
+      <li><h3>Цены как в прайсе</h3><p>Одна цена на карточке и на сайте. Укрепление в маникюре с покрытием уже включено.</p></li>
+      <li><h3>Три категории мастеров</h3><p>Базовая, топ-мастер и топ-мастер Гульназ: уровень и цену выбираете сами.</p></li>
+      <li><h3>Запись без звонка</h3><p>Заявка уходит в мессенджер, студия отвечает в рабочие часы.</p></li>
+      <li><h3>Центр и парковка</h3><p>Тополевый переулок, 5, первый этаж. Бесплатная парковка на 70 мест.</p></li>
+    </ul>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head s-section__head--reviews"><h2>Отзывы в 2ГИС</h2><p class="s-reviews__rating"><span class="s-reviews__num">5,0</span><span class="s-reviews__stars" style="--r: 5" aria-label="рейтинг 5,0 из 5"></span><span class="s-reviews__count">80 отзывов</span><a class="s-reviews__all" href="https://2gis.ru/perm/firm/70000001031102230" target="_blank" rel="noopener">Читать все отзывы в 2ГИС</a></p></header>
+    <ul class="s-reviews">
+      <li><blockquote>«Делала френч, получилось невероятно нежно и аккуратно! Тонкая улыбка, красивое исполнение, всё выглядит очень эстетично. Именно тот случай, когда маникюр не бросается в глаза, но выглядит дорого и утончённо. Осталась очень довольна результатом!»</blockquote><p class="s-reviews__who">Ульяна Рогожникова · 20 ноября 2026</p></li>
+      <li><blockquote>«Давно собиралась записаться на педикюр и очень рада, что выбрала именно это место. Всё получилось красиво и аккуратно, ножки теперь просто загляденье. Отдельное спасибо мастеру за бережное отношение и лёгкое общение. Ушла с приятным настроением и ощущением, что наконец-то уделила время себе»</blockquote><p class="s-reviews__who">Айлина Алиметова · 26 ноября 2026</p></li>
+      <li><blockquote>«Была сегодня на массаже у Гайдара – очень довольна! Вначале мастер уточнил мои пожелания и о наличии аллергии на масла. Время процедуры пролетело незаметно, я буквально задремала. Салон удобно расположен, внутри стильно и уютно, в кабинете комфортная атмосфера. Ещё есть возможность принять душ – большой плюс. Очень рекомендую!»</blockquote><p class="s-reviews__who">Юлия · 21 ноября 2026</p></li>
+    </ul>
+    <p class="s-note">Отзывы с карточки мастерской в 2ГИС, без правок.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Как записаться?</summary><p>Выберите услугу, день и время на этой странице: откроется чат студии, текст заявки скопируется, его останется отправить. Или позвоните, номер внизу.</p></details><details><summary>Сколько стоит маникюр с покрытием?</summary><p>У топ-мастера 2 600 ₽, у мастера базовой категории 2 200 ₽, у топ-мастера Гульназ 3 300 ₽. Укрепление входит в стоимость.</p></details><details><summary>Кто делает ногти?</summary><p>В студии три категории мастеров. В отзывах гости хвалят Полину: она делает маникюр, педикюр и массаж лица.</p></details><details><summary>Можно прийти только на массаж?</summary><p>Да. В мастерской есть массаж, спа-программы, лазерная эпиляция, брови и ресницы. Прайс на них пришлём в мессенджере.</p></details><details><summary>Есть ли парковка?</summary><p>Да, бесплатная на 70 мест. Вход с Тополевого переулка, первый этаж.</p></details></div>
+  </section>
+
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Запишитесь в мастерскую «Вдох»</h2></header>
+    <div class="s-contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>Тополевый переулок, 5, 1 этаж, Пермь</dd></div>
+        <div><dt>Часы</dt><dd>ежедневно 10:00-20:00, по записи</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79991258270">+7 999 125-82-70</a></dd></div>
+      </dl>
+      <div class="s-contacts__actions">
+        <a class="s-btn" href="#widget">Выбрать время</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="whatsapp" href="#">WhatsApp</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="s-foot"><p>Вдох · Пермь</p><p>Маникюр, педикюр, массаж, спа, лазерная эпиляция, брови и ресницы</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Выбрать время</a><a class="s-btn s-btn--ghost" href="tel:+79991258270">Позвонить</a></nav>
+<script src="style.js" defer></script>
+<script id="fix-prod-dock">
+(function () {
+  var dock = document.querySelector('.s-dock');
+  if (!dock) return;
+  var broken = false;
+  function place() {
+    if (getComputedStyle(dock).display === 'none') return;
+    dock.style.position = 'absolute';
+    dock.style.left = '0';
+    dock.style.right = '0';
+    dock.style.bottom = 'auto';
+    dock.style.top = (window.pageYOffset + window.innerHeight - dock.offsetHeight) + 'px';
+  }
+  function check() {
+    if (getComputedStyle(dock).display === 'none') return;
+    var r = dock.getBoundingClientRect();
+    if (r.bottom > window.innerHeight + 2 || r.top < -2) { broken = true; place(); }
+  }
+  window.addEventListener('scroll', function () { if (broken) place(); }, { passive: true });
+  window.addEventListener('resize', function () { broken = false; check(); });
+  check();
+  setTimeout(check, 400);
+})();
+</script>
+</body>
+</html>
