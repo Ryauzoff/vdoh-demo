@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Вдох · мастерская красоты в Перми</title>
-<meta name="description" content="Мастерская «Вдох» в центре Перми, на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте, три категории мастеров. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
+<meta name="description" content="Мастерская «Вдох» в центре Перми, на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Студия красоты, в которую хочется возвращаться">
-<meta property="og:description" content="Мастерская «Вдох» в центре Перми, на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте, три категории мастеров. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
+<meta property="og:description" content="Мастерская «Вдох» в центре Перми, на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%2334313a%27/%3E%3C/svg%3E">
@@ -36,6 +36,22 @@
     aspect-ratio: auto !important;
     height: clamp(96px, 20vh, 360px) !important;
     object-position: 50% 55% !important;
+  }
+}
+/* Заголовок первого экрана: крупнее и плотнее. У Tenor Sans одно начертание (400),
+   честного «жирного» в шрифте нет, поэтому плотность даём обводкой и мягкой тенью,
+   а размер поднимаем через --h1k (каркас умножает на него все ступени). */
+:root { --h1k: 1.22; }
+.s-hero h1 {
+  letter-spacing: -.012em;
+  -webkit-text-stroke: .045em currentColor;
+  text-shadow: 0 1px 0 currentColor;
+}
+@media (max-width: 860px) {
+  .s-hero h1 {
+    letter-spacing: -.015em;
+    -webkit-text-stroke: .05em currentColor;
+    text-shadow: 0 1px 0 currentColor;
   }
 }
 /* Вуаль над фоновым кадром: фотография видна, но текст остаётся читаемым.
@@ -274,7 +290,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     <div class="s-hero__text">
       <p class="s-eyebrow">Мастерская красоты · Пермь</p>
       <h1>Студия красоты, в которую хочется возвращаться</h1>
-      <p class="s-lead">Мастерская «Вдох» в центре Перми, на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте, три категории мастеров. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.</p>
+      <p class="s-lead">Мастерская «Вдох» в центре Перми, на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте.</p>
       <ul class="s-ticks"><li>Рейтинг 5,0 и 80 отзывов</li><li>Маникюр, педикюр, массаж, спа</li><li>Три категории мастеров</li><li>Центр Перми, ежедневно до 20:00</li></ul>
       <p class="s-rating"><b>5,0</b> в 2ГИС · 80 отзывов</p>
       <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Зал мастерской «Вдох»: кресла для ногтей, зеркала, кушетка" loading="lazy" decoding="async" style="object-position:50% 55%"><figcaption>Тополевый переулок, 5, первый этаж</figcaption></figure>
