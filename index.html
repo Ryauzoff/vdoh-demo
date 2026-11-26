@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Вдох · мастерская красоты в Перми</title>
-<meta name="description" content="Мастерская «Вдох» на Тополевом, 5: ногти, массаж, лазер и спа. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
+<meta name="description" content="Мастерская «Вдох» на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте, три категории мастеров. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Маникюр и педикюр в центре Перми – цены в прайсе">
-<meta property="og:description" content="Мастерская «Вдох» на Тополевом, 5: ногти, массаж, лазер и спа. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
+<meta property="og:title" content="Наконец-то время для себя: маникюр и педикюр в Перми">
+<meta property="og:description" content="Мастерская «Вдох» на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте, три категории мастеров. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%2334313a%27/%3E%3C/svg%3E">
@@ -25,6 +25,43 @@
 :root { --c-canvas: #f3e7e4; --c-surface: #fbf6f4; --c-ink: #2b292e; --c-ink-soft: #645b62; --c-accent: #34313a; --c-accent-ink: #f8f0ee; --c-accent-deep: #8c4b55; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style id="site-fix">
+/* Фото мастерской на первом экране: каркас прячет его на окнах ниже 1020 px,
+   а на обычном ноутбуке (1920x1080, окно около 960) фото нужно. Показываем,
+   когда по высоте влезает целиком, иначе оставляем как в каркасе. */
+@media (min-width: 861px) and (min-height: 900px) {
+  .s-hero__photo { display: block !important; }
+}
+/* Вуаль над фоновым кадром: фотография видна, но текст остаётся читаемым.
+   На компьютере светлее справа (там форма), на телефоне мягче сверху (там текст). */
+.s-hero__bg img {
+  opacity: .7 !important;
+  filter: saturate(1.04) contrast(1.03) !important;
+}
+.s-hero__bg::after {
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--c-canvas) 72%, transparent) 0%,
+      color-mix(in srgb, var(--c-canvas) 40%, transparent) 45%,
+      color-mix(in srgb, var(--c-canvas) 26%, transparent) 100%),
+    linear-gradient(180deg,
+      transparent 0%,
+      color-mix(in srgb, var(--c-canvas) 70%, transparent) 100%) !important;
+}
+@media (max-width: 860px) {
+  .s-hero__bg img { opacity: .52 !important; }
+  .s-hero__bg::after {
+    background: linear-gradient(180deg,
+      color-mix(in srgb, var(--c-canvas) 78%, transparent) 0%,
+      color-mix(in srgb, var(--c-canvas) 52%, transparent) 55%,
+      color-mix(in srgb, var(--c-canvas) 90%, transparent) 100%) !important;
+  }
+}
+/* Текст поверх фотографии: мягкая тень держит читаемость на светлом кадре. */
+.s-hero h1, .s-lead, .s-ticks li, .s-rating {
+  text-shadow: 0 1px 1px color-mix(in srgb, var(--c-canvas) 85%, transparent);
+}
+</style>
 <style id="fix-prod">
 /* Патч-слой для каркаса «Продающий» (vibe-sait).
    Один файл на все сайты: правим здесь, а не в каждом сайте.
@@ -223,15 +260,15 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Вдох</a>
   <div class="s-bar__right">
     <a class="s-bar__tel" href="tel:+79991258270">+7 999 125-82-70</a>
-    <a class="s-btn s-btn--sm" href="#widget">Выбрать время</a>
+    <a class="s-btn s-btn--sm" href="#prices">Выбрать услугу</a>
   </div>
 </header>
 <main>
   <section class="s-hero">
     <div class="s-hero__text">
       <p class="s-eyebrow">Мастерская красоты · Пермь</p>
-      <h1>Маникюр и педикюр в центре Перми – цены в прайсе</h1>
-      <p class="s-lead">Мастерская «Вдох» на Тополевом, 5: ногти, массаж, лазер и спа. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.</p>
+      <h1>Наконец-то время для себя: маникюр и педикюр в Перми</h1>
+      <p class="s-lead">Мастерская «Вдох» на Тополевом, 5. Ногти, массаж, лазер и спа в одном месте, три категории мастеров. Выберите услугу, день и время, заявка уйдёт в мессенджер студии.</p>
       <ul class="s-ticks"><li>Рейтинг 5,0 и 80 отзывов</li><li>Маникюр, педикюр, массаж, спа</li><li>Три категории мастеров</li><li>Центр Перми, ежедневно до 20:00</li></ul>
       <p class="s-rating"><b>5,0</b> в 2ГИС · 80 отзывов</p>
       <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Зал мастерской «Вдох»: кресла для ногтей, зеркала, кушетка" loading="lazy" decoding="async" style="object-position:50% 55%"><figcaption>Тополевый переулок, 5, первый этаж</figcaption></figure>
@@ -248,7 +285,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
         <a class="s-btn s-btn--wide" data-s-msg="whatsapp" href="#">Записаться в WhatsApp</a>
         <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
       </div>
-      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован, вставьте его в чат.</p>
       
     </form></div>
     <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Зал мастерской «Вдох»: кресла для ногтей, зеркала, кушетка" decoding="async" style="object-position:50% 55%" fetchpriority="high"></figure>
@@ -322,7 +359,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     <ul class="s-reviews">
       <li><blockquote>«Делала френч, получилось невероятно нежно и аккуратно! Тонкая улыбка, красивое исполнение, всё выглядит очень эстетично. Именно тот случай, когда маникюр не бросается в глаза, но выглядит дорого и утончённо. Осталась очень довольна результатом!»</blockquote><p class="s-reviews__who">Ульяна Рогожникова · 20 ноября 2026</p></li>
       <li><blockquote>«Давно собиралась записаться на педикюр и очень рада, что выбрала именно это место. Всё получилось красиво и аккуратно, ножки теперь просто загляденье. Отдельное спасибо мастеру за бережное отношение и лёгкое общение. Ушла с приятным настроением и ощущением, что наконец-то уделила время себе»</blockquote><p class="s-reviews__who">Айлина Алиметова · 26 ноября 2026</p></li>
-      <li><blockquote>«Была сегодня на массаже у Гайдара – очень довольна! Вначале мастер уточнил мои пожелания и о наличии аллергии на масла. Время процедуры пролетело незаметно, я буквально задремала. Салон удобно расположен, внутри стильно и уютно, в кабинете комфортная атмосфера. Ещё есть возможность принять душ – большой плюс. Очень рекомендую!»</blockquote><p class="s-reviews__who">Юлия · 21 ноября 2026</p></li>
+      <li><blockquote>«Самый самый лучший массаж в городе ❤️ И ещё качественный маникюр Всегда окружают заботой и не хочется уходить из этого места Рекомендую всем!»</blockquote><p class="s-reviews__who">Алина Г · 11 мая 2025</p></li>
     </ul>
     <p class="s-note">Отзывы с карточки мастерской в 2ГИС, без правок.</p>
   </section>
@@ -349,7 +386,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   </section>
 </main>
 <footer class="s-foot"><p>Вдох · Пермь</p><p>Маникюр, педикюр, массаж, спа, лазерная эпиляция, брови и ресницы</p></footer>
-<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Выбрать время</a><a class="s-btn s-btn--ghost" href="tel:+79991258270">Позвонить</a></nav>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#prices">Выбрать услугу</a><a class="s-btn s-btn--ghost" href="tel:+79991258270">Позвонить</a></nav>
 <script src="style.js" defer></script>
 <script id="fix-prod-dock">
 (function () {
